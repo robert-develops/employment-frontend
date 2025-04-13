@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Job Application Form</title>
+
+    <!-- Import Roboto font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       :root {
         --primary-color: #3a86ff;
@@ -13,7 +20,7 @@
         --dark-color: #212529;
         --success-color: #06d6a0;
         --error-color: #ef476f;
-        --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        --font-primary: "Roboto", sans-serif;
       }
 
       * {
@@ -78,7 +85,6 @@
         flex-wrap: wrap;
         margin-bottom: 20px;
         gap: 20px;
-       
       }
 
       .form-group {
@@ -148,14 +154,10 @@
       .checkbox-label input[type="checkbox"] {
         position: absolute;
         left: 0;
-        top: 50%; /* Center vertically relative to the text */
+        top: 50%;
         transform: translateY(-50%);
-        width: auto; /* Override the 100% width from other inputs */
+        width: auto;
       }
-        
-    
-
- 
 
       button {
         background-color: var(--primary-color);
@@ -455,11 +457,10 @@
           <div class="form-row">
             <div class="form-group full-width">
               <label class="checkbox-label">
-                
                 <span class="required"
                   >I agree to the terms and conditions</span
                 >
-                 <input
+                <input
                   type="checkbox"
                   id="agreeTerms"
                   name="agreeTerms"
